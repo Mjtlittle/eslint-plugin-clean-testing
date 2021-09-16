@@ -1,0 +1,32 @@
+{
+  "name": "eslint-plugin-clean-testing",
+  "description": "Eslint plugin for react templates to enforce best practices for assisting testing",
+  "version": "1.0.0",
+  "author": "Joshua Little",
+  "license": "MIT",
+  "homepage": "https://github.com/Mjtlittle/eslint-plugin-clean-testing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mjtlittle/eslint-plugin-clean-testing.git"
+  },
+  "keywords": [
+    "eslint",
+    "angular",
+    "testing",
+    "ids"
+  ],
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "@angular-eslint/template-parser": "^12.4.1",
+    "@angular/compiler": "^12.2.5"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.3"
+  }
+}
