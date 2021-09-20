@@ -36,6 +36,28 @@ and then add the following line to bottom of the `.eslintrc.json` file within th
 }
 ```
 
+To customize the list of elements that the plugin checks, manually add the rule (`clean-testing/elements-require-id`) to the config, and provide a second argument with the list of elements.
+
+```diff
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    ...
+    {
+      "files": ["*.html"],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:clean-testing/recommended"
+      ],
+      "rules": {
++       "clean-testing/elements-require-id": ["error", ["iframe", "canvas" ...]]
+      }
+    }
+  ]
+}
+```
+
 
 ## Usage
 
@@ -70,7 +92,7 @@ npm run lint
 <textarea></textarea>
 ```
 
-```shell
+```text
 $ ng lint
 
 Linting "angular-test-project"...

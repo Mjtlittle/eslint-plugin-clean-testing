@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-clean-testing",
-  "description": "Eslint plugin for react templates to enforce best practices for assisting testing",
-  "version": "1.0.1",
+  "description": "ESLint plugin for Angular templates to enforce best practices for assisting testing",
+  "version": "1.0.2",
   "author": "Joshua Little",
   "license": "MIT",
   "homepage": "https://github.com/Mjtlittle/eslint-plugin-clean-testing#readme",
